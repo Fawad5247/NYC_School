@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SchoolListCell" customModule="NYCSchoolsCodingChallenge" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JNh-EB-BGX">
+                        <rect key="frame" x="3" y="3" width="314" height="38"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="utJ-bC-se9">
+                                <rect key="frame" x="8" y="8.5" width="298" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.75" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="utJ-bC-se9" secondAttribute="trailing" constant="8" id="NNG-FL-3vB"/>
+                            <constraint firstItem="utJ-bC-se9" firstAttribute="leading" secondItem="JNh-EB-BGX" secondAttribute="leading" constant="8" id="bm1-pl-1U7"/>
+                            <constraint firstItem="utJ-bC-se9" firstAttribute="centerY" secondItem="JNh-EB-BGX" secondAttribute="centerY" id="cKb-gO-FuO"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="JNh-EB-BGX" secondAttribute="bottom" constant="3" id="HKT-1a-A1o"/>
+                    <constraint firstAttribute="trailing" secondItem="JNh-EB-BGX" secondAttribute="trailing" constant="3" id="Qi6-mD-YA3"/>
+                    <constraint firstItem="JNh-EB-BGX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="3" id="mC2-Sx-VWJ"/>
+                    <constraint firstItem="JNh-EB-BGX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="xZC-jT-YdL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cellBackground" destination="JNh-EB-BGX" id="Uq9-7D-jZO"/>
+                <outlet property="schoolNameLabel" destination="utJ-bC-se9" id="f0p-gv-izR"/>
+            </connections>
+            <point key="canvasLocation" x="204" y="11"/>
+        </tableViewCell>
+    </objects>
+</document>
